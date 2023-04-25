@@ -1,3 +1,5 @@
+import AnimatedContainer from "../../../components/animatedContainer";
+
 const Wrapper = ({title, primaryImg, secondaryImg, reverse}) => {
     
     return (
@@ -7,7 +9,9 @@ const Wrapper = ({title, primaryImg, secondaryImg, reverse}) => {
                 <h3 className="text-center text-gray-600 text-lg">{title}</h3>
             </div>
             <div>
-                <img src={secondaryImg} alt="" />
+                <AnimatedContainer>
+                    <img src={secondaryImg} alt="" />
+                </AnimatedContainer>
             </div>
         </div>
     )
